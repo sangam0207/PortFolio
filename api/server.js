@@ -1,13 +1,14 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
-
+const cors=require("cors");
 const app = express();
 dotenv.config();
 const port = process.env.PORT || 8000;
 
 // Middleware to parse JSON request body
 app.use(express.json());
+app.use(cors());
 app.get("/",(req,res)=>{
     res.send("Hello I am from backend")
 })

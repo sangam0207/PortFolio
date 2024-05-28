@@ -1,4 +1,3 @@
-
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
@@ -6,21 +5,47 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import './contact.css';
+import axios from 'axios';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('https://portfolio-1-ptyl.onrender.com/send', formData);
+      console.log('Message sent successfully', response.data);
+    } catch (error) {
+      console.log('Error sending message:', error.message);
+    }
+  };
+
   return (
     <>
       <div className="container contact" id="contact">
-       
         <div className="form-container">
-          <form className="contact-form">
-          <h1>CONTACT ME</h1>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <h1>CONTACT ME</h1>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -30,6 +55,8 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -38,6 +65,8 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -64,11 +93,7 @@ const Contact = () => {
           <a href="https://github.com/sangam0207" target="_blank" className="items">
             <FaGithubSquare className="icons" />
           </a>
-          <a
-            href="mailto:ssrv2024@gmail.com"
-            target="_blank"
-            className="items"
-          >
+          <a href="mailto:ssrv2024@gmail.com" target="_blank" className="items">
             <SiGmail className="icons" />
           </a>
         </div>
