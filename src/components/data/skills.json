@@ -8,6 +8,10 @@
     "imageSrc": "skills/css.png"
   },
   {
+    "title": "Tailwind CSS",
+    "imageSrc": "skills/tailwindcss.svg"
+  },
+  {
     "title": "JavaScript",
     "imageSrc": "skills/javascript.png"
   },
@@ -16,23 +20,39 @@
     "imageSrc": "skills/react.png"
   },
   {
+    "title": "Redux",
+    "imageSrc": "skills/redux.svg"
+  },
+  {
     "title": "Node",
     "imageSrc": "skills/node.png"
   },
   {
-    "title":"Firebase",
-    "imageSrc":"skills/firebase.png"
+    "title": "Express.js",
+    "imageSrc": "skills/express.png"
   },
-  {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
-  },
+ 
+  
   {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "MySQL",
+    "imageSrc": "skills/mysql.svg"
+  },
+
+  {
+    "title":"Github",
+    "imageSrc":"skills/github.svg"
+  },
+  {
+    "title":"Postman",
+    "imageSrc":"skills/postman.svg"
+  },
+  {
+    "title":"Firebase",
+    "imageSrc":"skills/firebase.png"
   }
+ 
 ]

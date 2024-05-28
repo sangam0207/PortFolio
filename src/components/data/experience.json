@@ -1,41 +1,39 @@
 [
   {
     "id": 1,
-    "role": "Senior Software Development Engineer SDE - II",
-    "organisation": "Google",
-    "startDate": "Sept, 2023",
+    "role": "Junior Mern Stack Developer",
+    "organisation": "Equartis Technology",
+    "startDate": "Feb, 2024",
     "endDate": "Present",
-    "location": "CA,United State",
+    "location": "Chandigarh, India",
     "experiences": [
-      "Worked on Google Gmail",
-      "Worked with the Google Bard Team"
+      "Worked React.js,Redux,Node.js,Express.js,MOngoDB"
     ],
-    "imageSrc": "company/google.png"
+    "imageSrc": "company/download.png"
   },
   {
     "id": 2,
-    "role": "Software Development Engineer SDE - I",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2022",
-    "endDate": "Aug, 2023",
-    "location": "London, UK",
+    "role": "Mern Stack Developer,Intern",
+    "organisation": "Reeach.one",
+    "startDate": "Oct, 2023",
+    "endDate": "Jan, 2024",
+    "location": "New Delhi, India",
     "experiences": [
-      "Worked on Windows 10 terminal",
-      "Worked on Window 11 Upcoming features"
+      "Worked on JavaScript,React.js,Tailwind CSS,Node.js"
+     
     ],
-    "imageSrc": "company/microsoft.png"
+    "imageSrc": "company/reeach_one_logo.jpeg"
   },
   {
     "id": 3,
-    "role": "Software Development Engineer - Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2021",
-    "endDate": "Jun, 2022",
-    "location": "Bengluru, India",
+    "role": "Javascript Developer,Intern",
+    "organisation": "Zenchi Software Private Limited",
+    "startDate": "Feb, 2023",
+    "endDate": "Jun, 2023",
+    "location": "Chandigarh, India",
     "experiences": [
-      "Worked on Nextflix payment system",
-      "Helped to create UI for video player"
+      "Worked on HTML,CSS,Javascript"
     ],
-    "imageSrc": "company/netflix.png"
+    "imageSrc": ""
   }
 ]
