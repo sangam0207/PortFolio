@@ -8,7 +8,9 @@ const port = process.env.PORT || 8000;
 
 // Middleware to parse JSON request body
 app.use(express.json());
-
+app.get("/",(req,res)=>{
+    res.send("Hello I am from backend")
+})
 app.post("/send", async (req, res) => {
     const { name, email, message } = req.body;
 
